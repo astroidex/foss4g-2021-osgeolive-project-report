@@ -95,7 +95,7 @@ These slides make use of the &lt;a href=”<a class="reference external" href="h
 <h2>What is OSGeoLive?</h2>
 <img alt="_images/osgeolive_menu.png" class="first" src="_images/osgeolive_menu.png" />
 <aside class="last notes">
-no notes :)</aside>
+OSGeoLive is a GNU/Linux distribution, including the best Free and Open Source Geospatial Software</aside>
 </section>
 <section>
 <h2>Components on OSGeoLive</h2>
@@ -107,8 +107,6 @@ no notes :)</aside>
 </ul>
 <aside class="last notes">
 Lubuntu Linux distribution, that contains pre-installed and pre-configured software and data	
-
-
 
 OSGeoLive is a self-contained bootable DVD, 
 USB thumb drive or Virtual Machine based on Lubuntu.
@@ -172,7 +170,7 @@ Download of the last version
 <section class="last">
   <h2>OSGeoLive 14.0</h2></h2>
   <ul class="first simple">
-    <li>is OSGeoLive 14 "Malena"</li>
+    <li>OSGeoLive 14 "Malena"</li>
     <li>We would like to dedicate this version to our friend Malena Libman who passed away shortly before OSGeoLive 14.0 was released. FOSS4G 2021 Buenos Aires was her dream. Farewell Malena, we will miss you. </li>
   </ul>
   <aside class="last notes">
@@ -183,17 +181,21 @@ Download of the last version
   <h2>What is new in 14.0</h2></h2>
   <ul class="first simple">
     <li>Updated to Lubuntu 20.04 LTS</li>
+    <li>LXQt from LXDE - Major UI changes</li>
     <li>Updated core packages based on <a class="reference external" href="href=&quot;https://wiki.debian.org/DebianGis&quot;">DebianGIS</a></li>
     <li>Updated packages contributed back to <a class="reference external" href="href=&quot;https://wiki.ubuntu.com/UbuntuGIS&quot;">UbuntuGIS</a></li>
     <li>QGIS 3.10.13, GDAL 3.2.1, PROJ 7.2.1, PostGIS 3.1.0, GRASS 7.8.5, GeoServer 2.18.0, MapServer 7.6.1 and many more…</li>
-    <li>New projects added: GeoStyler, Re3gistry</li>
+    <li>New projects added: pygeoapi, GeoStyler, Re3gistry</li>
     <li>Additional Python modules like Fiona, rasterio, cartopy, pandas, geopandas, mappyfile, Jupyter. </li>
     <li>Download OSGeoLive either as ISO or VMDK (with even more software)</li>
-        <li><a href="https://trac.osgeo.org/osgeolive/wiki/Press%20Release%2093">Press release 93: </a></li>
+        <li><a href="https://trac.osgeo.org/osgeolive/wiki/Press%20Release%2093">Press release 93</a></li>
     <li>Full <a class="reference external" href="href=&quot;https://github.com/OSGeo/OSGeoLive/blob/master/CHANGES.txt&quot;">changelog</a></li>
   </ul>
   <aside class="last notes">
-  In OSGeoLive Version 14.0 we’ve updated our core packages to the latest stable, added new projects (GeoStyler, Re3gistry), improved our documentation and translations. We’ve also updated many existing applications and moved to the latest Lubuntu 20.04 Long Term Support release.</aside>
+  In OSGeoLive Version 14.0 we’ve updated our core packages to the latest stable, added new projects (pygeoapi, GeoStyler, Re3gistry), improved our documentation and translations. We’ve also updated many existing applications and moved to the latest Lubuntu 20.04 Long Term Support release.
+  We moved from LXDE to LXQt.
+  OSGeoLive is used as a testing environment for UbuntuGIS packages. Once OSGeoLive is released all the packages are considered stable enough to be included in UbuntuGIS stable.
+</aside>
 </section>
 
 <section class="last">
@@ -224,17 +226,60 @@ Download of the last version
 </aside>
 </section>
 
+<section class="last">
+  <h2>Challenges of version 14.0</h2></h2>
+  <ul class="first simple">
+    <li>LXQt instead of LXDE</li>
+    <li>Many upstream ubuntu changes blocked our development for a while</li>
+    <li>Packaging efforts slower than usual due to pandemic</li>
+    <li>Not enough testers, please join us!</li>
+  </ul>
+  <aside class="last notes">
+
+</aside>
+</section>
+
+<section class="last">
+  <h2>OSGeoLive in the Cloud</h2></h2>
+  <ul class="first simple">
+    <li>DebianGIS and UbuntuGIS packages are used in Docker and VMs on the cloud</li>
+    <li>OSGeoLive has been reported to work fine in Cloud environments</li>
+    <li>Works under OpenStack</li>
+    <li>Used in ESA's DIAS infrastructure: <a href="https://creodias.eu/-/how-to-get-access-to-gui-on-vm-with-osgeolive-image-">Creodias</a></li>
+  </ul>
+  <aside class="last notes">
+
+</aside>
+</section>
+
 
 <section class="last">
   <h2>OSGeoLive in Action</h2></h2>
   <ul class="first simple">
 <p>
- Marco Minghini, Scientific Project Officer at the European Commission, says </p>br>"Open source geospatial software is a key building block of many data infrastructures managed and operated by the European Commission, powering high-level, pan-European initiatives such as INSPIRE and Copernicus. The role of OSGeoLive to teach and promote the use of open source geospatial software has no equivalent. Big thanks to OSGeo and the OSGeoLive team!"
+ Marco Minghini, Scientific Project Officer at the European Commission, says </p>"Open source geospatial software is a key building block of many data infrastructures managed and operated by the European Commission, powering high-level, pan-European initiatives such as INSPIRE and Copernicus. The role of OSGeoLive to teach and promote the use of open source geospatial software has no equivalent. Big thanks to OSGeo and the OSGeoLive team!"
 </p>
-</br>
 <p>
-OSGeoLive 14 is ready to be used at events. It was used at FOSSGIS Konferenz 2021 in June and will be used at FOSS4G 2021 in September 2021. 
+OSGeoLive 14 is ready to be used at events. It was used at FOSSGIS Konferenz 2021 in June and is used at FOSS4G 2021 (2 workshops already used it).
 </p>
+  </ul>
+  <aside class="last notes">
+
+</aside>
+</section>
+
+<section class="last">
+  <h2>Roadmap</h2></h2>
+  <ul class="first simple">
+    <li>OSGeoLive 15.0 for FOSS4G 2022</li>
+    <li>Lubuntu 22.04</li>
+    <li>Include all new OSGeo Community Projects</li>
+    <li>Plan to include Glossary from Lexicon Committee</li>
+    <li>Write documentations for projects that are already installed e.g. PDAL</li>
+    <li>Improve usability for HOT users (OSGeo-HOT MOU)</li>
+    <li>Improve translations</li>
+    <li>Apply with your project</li>
+    <li>Get involved!. You can learn a lot and share ideas.</li>
   </ul>
   <aside class="last notes">
 
@@ -1322,7 +1367,7 @@ and Georepublic geomatics company.</aside>
 <p class="first">Become a member of our team</p>
 <ul class="last simple">
 <li>Join our <a class="reference external" href="https://lists.osgeo.org/mailman/listinfo/osgeolive">Mailing List</a> and introduce yourself</li>
-<li>Take part in our weekly <a class="reference external" href="https://wiki.osgeo.org/wiki/IRC">IRC</a> meetings (channel <code class="docutils literal"><span class="pre">#osgeolive</span></code> on Freenode)</li>
+<li>Take part in our weekly <a class="reference external" href="https://wiki.osgeo.org/wiki/IRC">IRC</a> meetings (channel <code class="docutils literal"><span class="pre">#osgeolive</span></code> on libera.chat and Matrix)</li>
 <li>There are several ways to get involved<ul>
 <li>Help improve OSGeoLive website and documentation</li>
 <li>Submit new projects</li>
